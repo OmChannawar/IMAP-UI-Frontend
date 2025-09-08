@@ -1,0 +1,48 @@
+/* Import a professional-looking font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Apply styles to the whole page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* A light grey background */
+}
+
+/* Make the navigation bar more modern */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Style the main header on the index page */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070') center center;
+  background-size: cover;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+}
+
+/* Add hover effects and shadows to cards */
+.card {
+  transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+/* Style for the login/signup form container */
+.form-container {
+  max-width: 450px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}

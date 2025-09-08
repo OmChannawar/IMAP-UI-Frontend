@@ -1,118 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>I.M.A.P.</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Internship Allocation Engine</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   </head>
+<body>
 
-  <body>
-    <!--Header-->
-    <header class="p-3 mb-3 border-bottom">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-            <svg
-              class="bi me-2"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
-            >
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li>
-              <a href="#" class="nav-link px-2 link-secondary">Home</a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-body-emphasis">Orders</a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-body-emphasis">Customers</a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-body-emphasis">Profile</a>
-            </li>
-          </ul>
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form>
-          <div class="dropdown text-end">
-            <a
-              href="#"
-              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="https://github.com/mdo.png"   // profile image
-                alt="mdo"
-                width="32"
-                height="32"
-                class="rounded-circle"
-              />
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Internship Allocation Engine</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="candidate-profile.html">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Internships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-light" href="login.html">Login</a>
+          </li>
+           <li class="nav-item ms-lg-2">
+            <a class="btn btn-warning" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    
+   <div class="hero-section text-center">
+      <h1 class="display-5 fw-bold">AI-Powered Internship Matching</h1>
+      <p class="fs-4">A smart, automated system to match candidates with internship opportunities based on skills, preferences, and industry needs.</p>
+      <p><em>Organization: Ministry of Corporate Affairs (MoCA)</em></p>
+    </div>
+
+    <div class="row text-center">
+      
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Manage Candidates</h5>
+            <p class="card-text">View, add, or update candidate profiles with details like skills, qualifications, and location preferences.</p>
+            <a href="candidate-profile.html" class="btn btn-primary">Go to Candidates</a>
           </div>
         </div>
       </div>
-    </header>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Manage Internships</h5>
+            <p class="card-text">Post new internship opportunities from various industries and define the required skills and capacity.</p>
+            <a href="#" class="btn btn-primary">Go to Internships</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm bg-success text-white">
+          <div class="card-body">
+            <h5 class="card-title">Run Matching Algorithm</h5>
+            <p class="card-text">Trigger the AI/ML engine to find the best matches between candidates and available internships.</p>
+            <a href="#" class="btn btn-light">Run Match & View Results</a>
+          </div>
+        </div>
+      </div>
 
-    <h1>Hello World!</h1>
+    </div>
+  </main>
 
-    <!--Footer-->
-    <footer class="py-3 my-4" style="padding: 0 12px 0 12px; 
-                                     margin: 0 24px 0 24px;">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
-        </li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
-    </footer>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <footer class="py-3 my-4">
+    <p class="text-center text-muted">© 2025 Ministry of Corporate Affairs (MoCA)</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
