@@ -10,9 +10,13 @@ body {
 /* Make the navigation bar more modern */
 .navbar {
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  background-color: #2A9D8F;
 }
 
 /* Style the main header on the index page */
+.nav-link{
+  color: white  
+}
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070') center center;
   background-size: cover;
