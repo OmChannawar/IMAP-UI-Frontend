@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Skill Filter</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Add custom font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <header class="bg-indigo-700 shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/Home/index.html" class="text-xl font-bold text-white">Internship Allocation Engine</a>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="/Home/index.html" class="text-indigo-200 hover:text-white transition-colors">Dashboard</a>
+                <a href="/Internship/internship.html" class="text-white font-semibold underline">Internships</a>
+                <a href="/Profile/profile.html" class="text-indigo-200 hover:text-white transition-colors">Profile</a>
+                <a href="#" class="text-indigo-200 hover:text-white transition-colors">About</a>
+                <a href="/login_signup/login_signup.html" class="bg-white text-indigo-700 font-semibold px-4 py-2 rounded-md hover:bg-indigo-100 transition-colors">
+                    Login
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button aria-label="Open menu" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12 flex-grow">
+        <div class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+                Find Your Dream Internship
+            </h1>
+            <p class="text-lg text-gray-600 mt-2">
+                Apply filters to narrow down your search
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <aside class="w-full md:w-1/4 lg:w-1/5">
+                <div class="bg-white p-6 rounded-lg shadow-sm sticky top-8">
+                    <h2 id="filter-heading" class="text-xl font-semibold mb-4 border-b pb-2">
+                        Filter by Skills
+                    </h2>
+                    <div id="skills-filter" role="group" aria-labelledby="filter-heading" class="space-y-3">
+                        </div>
+                </div>
+            </aside>
+
+            <section aria-labelledby="internship-listings-heading" class="w-full md:w-3/4 lg:w-4/5">
+                <h2 id="internship-listings-heading" class="sr-only">Internship Listings</h2>
+                <div id="internship-listings" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    </div>
+
+                <div id="no-results" class="text-center py-16 hidden" role="alert">
+                    <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">
+                        No Internships Found
+                    </h3>
+                    <p class="mt-1 text-gray-500">
+                        Try adjusting your filters to find more results.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="w-full bg-indigo-700 mt-12 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-indigo-200 text-sm">© 2025 Ministry of Corporate Affairs (MoCA)</p>
+        </div>
+    </footer>
+
+
+    <script src="internship.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+/* Custom styles for transitions */
+
+.internship-card {
+  /* Defines the smooth transition effect for opacity and transform */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.internship-card.hidden {
+  /* The state when a card is filtered out */
+  opacity: 0;
+  transform: scale(0.95);
+  
+  /* The following lines remove it from the document flow 
+     so the grid re-arranges smoothly without snapping. */
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  
+  /* We use pointer-events: none instead of display: none 
+     to allow the CSS transition to run before it's hidden. */
+  pointer-events: none; 
+}
